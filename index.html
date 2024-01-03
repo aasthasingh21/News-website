@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="http://il5.picdn.net/shutterstock/videos/7613365/thumb/1.jpg" alt="logo">
+            </a>
+            <div class="nav-links flex">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="news-input" placeholder="eg:science" id="search-text">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+
+    </nav> 
+
+
+   <main>
+        <div class="cards-container container flex" id="cards-container">
+            <!-- <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 clas="news-source" id="news-source">End Gadget 09/09/2023</h6>
+                    <p class="news-description" id="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iste distinctio eveniet sapiente. Labore animi facilis dolorem laborum, eaque unde!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 clas="news-source" id="news-source">End Gadget 09/09/2023</h6>
+                    <p class="news-description" id="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iste distinctio eveniet sapiente. Labore animi facilis dolorem laborum, eaque unde!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 clas="news-source" id="news-source">End Gadget 09/09/2023</h6>
+                    <p class="news-description" id="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iste distinctio eveniet sapiente. Labore animi facilis dolorem laborum, eaque unde!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 clas="news-source" id="news-source">End Gadget 09/09/2023</h6>
+                    <p class="news-description" id="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iste distinctio eveniet sapiente. Labore animi facilis dolorem laborum, eaque unde!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 clas="news-source" id="news-source">End Gadget 09/09/2023</h6>
+                    <p class="news-description" id="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iste distinctio eveniet sapiente. Labore animi facilis dolorem laborum, eaque unde!</p>
+                </div>
+            </div>
+
+            { his is all done in (javascript) }
+
+        </div> -->
+
+    </main>
+
+   <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 clas="news-source" id="news-source">End Gadget 09/09/2023</h6>
+                <p class="news-description" id="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iste distinctio eveniet sapiente. Labore animi facilis dolorem laborum, eaque unde!</p>
+            </div>
+        </div>
+   </template>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
