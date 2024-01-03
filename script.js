@@ -20,7 +20,7 @@ async function fetchNews (query) { // query= whatever query you put you will get
 }
 
 function bindData(articles) { // to clone the templates
-    const cardsContainer = document.getElementById('cards-container');
+    const cardsContainer = document.getElementById('cards-container'); 
     const newsCardTemplate = document.getElementById('template-news-card');
 
     cardsContainer.innerHTML = '';
